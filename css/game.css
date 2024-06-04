@@ -1,0 +1,141 @@
+
+/**diseño de la interfaz web*/
+body {         /* estilo cuerpo de la pagina*/
+    background-color: #281001;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: green;
+    height: 130px;
+    width: 80%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border-radius: 10px 10px 0 0;
+    padding: 12px 12px 0 12px;
+}
+
+.domino {  /*elemento de la clase domino*/
+    height: 80px;
+}
+
+#lstdominos .domino.selected {
+    transform: translateY(-25px);
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.first {
+    position: absolute;
+    top: 30%;
+    transform: translateX(-100px) translateY(-50px);
+}
+
+.selected-item {
+    background-color: #fcece3;
+    height: 40px;
+    width: 40px;
+    z-index: 10;
+    pointer-events: auto !important;
+}
+
+.overitem{
+    z-index: 10;
+}
+
+.unselected-item {
+    height: 40px;
+    width: 40px;
+}
+
+.selected-item:hover {
+    background-color: #BBFFF9;
+}
+
+.container-item {
+    background-color: white;
+    padding: 1px;
+}
+
+.domino-item {
+    height: 78px;
+    width: 38px;
+    border: 1px solid black;
+}
+
+.horizontal-domino-item {
+    height: 38px;
+    width: 78px;
+    border: 1px solid black;
+}
+
+.separator {
+    height: 1px;
+    background-color: black;
+    width: 90%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.horizontal-separator {
+    height: 90%;
+    background-color: black;
+    width: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.domino-number-item {
+    height: 38px;
+    width: 100%;
+}
+
+.point {
+    height: 6px;
+    width: 6px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.internal-number {
+    width: 34px;
+    height: 11px;
+    padding: 4px;
+}
+
+.btn-iniciar {
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+    padding: 10px 20px;
+}
+
+.timer {
+    position: absolute;
+    right: 20px;
+    padding: 7px 30px;
+    background-color: white;
+    color: red;
+    border-radius: 12px;
+    top: 10px;
+    font-size: 20px;
+}
+
+.score {
+    position: absolute;
+    right: 150px;
+    padding: 7px 30px;
+    background-color: white;
+    color: green;
+    border-radius: 12px;
+    top: 10px;
+    font-size: 20px;
+}
